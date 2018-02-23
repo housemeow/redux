@@ -231,7 +231,6 @@ function todoApp(state = initialState, action) {
       return Object.assign({}, state, {
         visibilityFilter: action.filter
       })
-    case ADD_TODO:
     case TOGGLE_TODO:
       return Object.assign({}, state, {
         todos: todos(state.todos, action)
